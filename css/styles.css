@@ -64,7 +64,7 @@ img {
 }
 .page-nav {
   display: flex;
-  gap: 76px;
+  align-items: center;
 }
 .page-nav-logo {
   font-family: 'Raleway', sans-serif;
@@ -80,6 +80,7 @@ img {
   flex-direction: row;
   gap: 0px;
   width: 115px;
+  margin-right: 76px;
 }
 
 .page-nav-logo-studio {
@@ -93,8 +94,6 @@ img {
   justify-content: flex-start;
   flex-direction: row;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .menu-link {
@@ -103,6 +102,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-link:hover,
@@ -160,14 +161,10 @@ img {
   width: 496px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 496px;
 }
 
 .main-content-hero-button {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
   border-radius: 4px;
   padding: 16px 32px;
   font-weight: 500;
@@ -180,6 +177,10 @@ img {
   letter-spacing: 0.04em;
   margin-left: auto;
   margin-right: auto;
+  min-width: 169px;
+  border: none;
+  height: 56px;
+  display: block;
 }
 
 .main-content-hero-button:hover,
@@ -191,8 +192,8 @@ img {
 
 /* ============== Features ============== */
 
-.main-content-features-title {
-  display: none;
+.visually-hidden {
+  visibility: hidden;
 }
 
 .main-content-features-title-container {
@@ -201,6 +202,7 @@ img {
   line-height: 1.2;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .main-content-features-list {
@@ -251,9 +253,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
@@ -263,10 +263,11 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 8px;
   width: 232px;
   margin-left: 16px;
   margin-right: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .main-content-team-list-name {
@@ -276,6 +277,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .main-content-team-list-descr {
@@ -313,7 +315,6 @@ img {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 8px;
   border-bottom: 1px solid #e7e9fc;
   padding: 32px 16px;
 }
@@ -327,6 +328,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .main-content-portfolio-list-cards {
@@ -353,12 +355,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 0px;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .footer-content-logo-studio {
