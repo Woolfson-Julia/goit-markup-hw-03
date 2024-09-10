@@ -74,11 +74,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 0px;
   width: 115px;
   margin-right: 76px;
 }
@@ -89,7 +84,6 @@ img {
 
 .menu {
   display: flex;
-  width: 261px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
@@ -115,13 +109,11 @@ img {
 /* ============== Contacts ============== */
 .contacts {
   font-style: normal;
-  display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
 }
 .contacts-list {
   display: flex;
-  justify-content: space-between;
   gap: 40px;
 }
 .contacts .contacts-link {
@@ -157,7 +149,6 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
-  margin-top: 0;
   width: 496px;
   margin-left: auto;
   margin-right: auto;
@@ -219,11 +210,6 @@ img {
   gap: 24px;
 }
 .main-content-features-list-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 8px;
   width: calc((1128px - 72px) / 4);
 }
 .main-content-features-title-descr {
@@ -252,16 +238,11 @@ img {
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
-  margin-top: 0px;
 }
 
 .main-content-team-list-item {
   background-color: #ffffff;
   width: calc((1128px - 72px) / 4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -325,6 +306,8 @@ img {
   justify-content: center;
   flex-direction: column;
   border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
 }
 .main-content-portfolio-list-item {
